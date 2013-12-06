@@ -22,6 +22,32 @@ Stack FlipStack (Stack pancakes)
 
 }
 
+string orderPancakes(string config)
+{
+
+}
+
+string findIdealConfig(string initialConfig)
+{
+	string result = initialConfig;
+	
+	std::transform(result.begin(), result.end(), result.begin(), toupper);
+	result = orderPancakes(result);
+
+	return result;
+}
+
+string flipThree(string config)
+{
+
+}
+
+string flipTwo(string config)
+{}
+
+string flipOne(string config)
+{}
+
 int main()
 {
 	ifstream inFile("pancakes.in");
